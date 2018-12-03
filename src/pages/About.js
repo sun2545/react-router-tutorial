@@ -1,11 +1,11 @@
 import React from 'react';
 
-const About =()=>{
+const About =({match})=>{
     return(
         <div>
             <h2>introduce</h2>
             <p>
-                Hello, I am react router
+                Hello, I am {match.params.name}
                 </p>
                 </div>
     );
