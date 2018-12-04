@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import {Router} from 'react-router-dom';
+import React from 'react';
+import {Route} from 'react-router-dom';
 import {Home,About} from 'pages';
 
 const App=()=>{
   return(
     <div>
-      <Router exact path="/" component={Home}/>
-      <Router path="/about" component={About}/>
-      <Router path="/about/:name" component={About}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/about/:name" component={About}/>
       </div>
   );
 };
