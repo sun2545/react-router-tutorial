@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 
 const Menu=()=>{
     const activeStyle={
@@ -12,6 +12,7 @@ const Menu=()=>{
                 <li><NavLink exact to="/" activeStyle={activeStyle}>Home </NavLink></li>
                 <li><NavLink exact to="/about" activeStyle={activeStyle}>about </NavLink></li>
                 <li><NavLink to="/about/react" activeStyle={activeStyle}>Introduce React </NavLink></li>
+                <li><NavLink to="/posts" activeStyle={activeStyle}>post list</NavLink></li>
             </ul>
         </div>
     );
